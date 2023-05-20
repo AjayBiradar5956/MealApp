@@ -41,7 +41,7 @@ xhr.send();
 //Common Details of the Dish
 function dishDetails(response) {
     cardImgTop.setAttribute("src", response['meals'][0]['strMealThumb']);
-    category.innerHTML = `<b>Category</b>: ${response['meals'][0]['strCategory']} &nbsp || &nbsp <b>Area: ${response['meals'][0]['strArea']}</b>`;
+    category.innerHTML = `<b>Category</b>: ${response['meals'][0]['strCategory']} &nbsp || &nbsp <b>Area:</b> ${response['meals'][0]['strArea']}`;
     tags.innerHTML = `<b>Tags</b>: ${response['meals'][0]['strTags']}`;
     cardText.innerText = response['meals'][0]['strInstructions'];
     youtube.setAttribute('href', response['meals'][0]['strYoutube']);
