@@ -12,8 +12,6 @@
     color: white;
 }
 
-
-
 /* Top-Section */
 #top-container {
     display: flex;
@@ -54,7 +52,7 @@
 
 #leftdiv {
     height: auto;
-    border-right: 2px solid white;
+    border-right: 2px solid lightgray;
     width: 60vw;
 
 }
@@ -183,7 +181,7 @@ li img {
 
 
 /* Right Section */
-#right {
+#rightDiv {
     height: auto;
     width: 40vw;
     text-align: center;

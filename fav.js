@@ -1,5 +1,6 @@
 var listGroup = document.querySelector('.list-group');
 
+//Get Favorites from Local Storage
 var favorites = getFavorites();
 
 function getFavorites() {
@@ -36,10 +37,10 @@ function pageLayout(meal) {
 }
 renderFavoriteMeal();
 
+//Delete Operation
 listGroup.addEventListener('click', function (event) {
     console.log(event.target);
     if (event.target.matches('.fa-solid') || event.target.matches('.delete-btn')) {
-
         let mealName = event.target.closest('li').id;
         let valueToRemove = mealName;
         favorites = favorites.filter(function (item) {

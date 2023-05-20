@@ -1,13 +1,8 @@
-var category = document.querySelector('#category');
-var alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-var mealNames = [];
 let input = document.getElementById('input');
 let mealList = document.getElementById('list');
-let favList = document.querySelector('.fav-list');
-let selectedName = document.querySelector('.selectMeal');
-
 
 //GET THE CATEGORIES - DISPLAYED ON HOMEPAGE
+var category = document.querySelector('#category');
 var xhr1 = new XMLHttpRequest;
 xhr1.open('get', 'https://www.themealdb.com/api/json/v1/1/categories.php', true);
 xhr1.onload = function () {
@@ -26,6 +21,8 @@ xhr1.onload = function () {
 xhr1.send();
 
 //GET ALL THE NAMES OF THE MEALS
+var alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+var mealNames = [];
 for (let i = 0; i < alpha.length; i++) {
     let xhr = new XMLHttpRequest();
     let url = 'https://www.themealdb.com/api/json/v1/1/search.php?f=' + alpha[i];
@@ -50,7 +47,7 @@ for (let i = 0; i < alpha.length; i++) {
     xhr.send();
 }
 
-//SUGGESTIONS
+//SUGGESTIONS SECTION
 input.addEventListener('keyup', () => {
     let result = [];
     let answer = input.value;
@@ -89,6 +86,7 @@ function getFavorites() {
     }
 }
 
+let favList = document.querySelector('.fav-list');
 function renderFavoriteMeal() {
     favList.innerHTML = '';
     favorites.forEach((meal) => {
