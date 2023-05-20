@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    background-color: lightgrey;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    width: 40rem;
+
+}
+
+.dish-image {
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+
+}
+
+#dish {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+ul li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.favItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.details {
+    flex-grow: 4;
+    text-align: left;
+}
+
+button {
+    background-color: inherit;
+    border: none;
+}
+
+button:hover {
+    color: red;
+}
+
+.delete {
+    font-size: 1.9rem;
+}
+
+.link-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    font-size: 1.3rem;
+}
+
+.link-body a {
+    text-decoration: none;
+    margin-bottom: 25px;
+}
