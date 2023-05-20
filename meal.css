@@ -1,0 +1,57 @@
+body {
+    margin: 50px;
+    background-color: #b83d0f;
+}
+
+.card {
+    width: 40rem;
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+}
+
+#card-img {
+    height: 250px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: 1.9rem;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.details {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    margin: 15px;
+    text-align: left;
+}
+
+.link-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 1.3rem;
+}
+
+.link-body a {
+    text-decoration: none;
+}
+
+.youtube {
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
